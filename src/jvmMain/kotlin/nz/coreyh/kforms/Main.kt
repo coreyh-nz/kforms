@@ -1,7 +1,5 @@
 package nz.coreyh.kforms
 
-import dev.kilua.rpc.applyRoutes
-import dev.kilua.rpc.getAllServiceManagers
 import io.ktor.server.application.Application
 import io.ktor.server.application.install
 import io.ktor.server.plugins.compression.Compression
@@ -15,6 +13,6 @@ fun Application.main() {
     install(WebSockets)
 
     routing {
-        getAllServiceManagers().forEach { applyRoutes(it) }
+//        getAllServiceManagers().forEach { applyRoutes(it) }
     }
 }
